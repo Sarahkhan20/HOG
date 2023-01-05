@@ -1,58 +1,96 @@
-                body {
-                    margin: 0px;
-                    padding: 0;
-                }
-                
-                .btn {
-                    background: #3498db;
-                    background-image: -webkit-linear-gradient(top, #757b83, #182323);
-                    background-image: -moz-linear-gradient(top, #757b83, #182323);
-                    background-image: -ms-linear-gradient(top, #757b83, #182323);
-                    background-image: -o-linear-gradient(top, #757b83, #182323);
-                    background-image: linear-gradient(to bottom, #757b83, #182323);
-                    -webkit-border-radius: 28;
-                    -moz-border-radius: 8;
-                    border-radius: 28px;
-                    font-family: Arial;
-                    color: #ffffff;
-                    font-size: 20px;
-                    padding: 10px 20px 10px 20px;
-                    text-decoration: none;
-                    margin: 30px;
-                }
-                
-                .btn:hover {
-                    background: #3cb0fd;
-                    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-                    background-image: -moz-linear-gradient(top, #263533, #2bc4ad);
-                    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-                    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-                    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-                    text-decoration: none;
-                }
-                
-                .top-container {
-                    background-color: #182323;
-                }
-                
-                h1 {
-                    font-size: 10rem;
-                }
-                
-                h2 {
-                    font-size: 5.6rem;
-                }
-                
-                .img {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                }
-                
-                .text {
-                    position: absolute;
-                    text-align: center;
-                    top: 15%;
-                    right: 25%;
-                    line-height: 10%;
-                }
+body {
+    margin: 0px;
+    padding: 0;
+}
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #757b83, #182323);
+    background-image: -moz-linear-gradient(top, #757b83, #182323);
+    background-image: -ms-linear-gradient(top, #757b83, #182323);
+    background-image: -o-linear-gradient(top, #757b83, #182323);
+    background-image: linear-gradient(to bottom, #757b83, #182323);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 8;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #263533, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.top-container {
+    background-color: #182323;
+}
+
+h1 {
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 5.6rem;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    right: 25%;
+    line-height: 10%;
+}
+/* tab view  */
+
+@media (min-width: 422px) and (max-width: 1000px) {
+    h1 {
+        font-size: 7 rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .text {
+        top: 13%;
+    }
+}
+@media (min-width: 422px) and (max-width: 653px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* phone view  */
+
+@media (max-width: 421px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .text {
+        top: 10%;
+    }
+}
